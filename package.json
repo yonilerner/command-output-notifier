@@ -1,0 +1,22 @@
+{
+  "name": "command-output-notifier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yonilerner/command-output-notifier.git"
+  },
+  "author": "Yoni Lerner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yonilerner/command-output-notifier/issues"
+  },
+  "homepage": "https://github.com/yonilerner/command-output-notifier#readme",
+  "dependencies": {
+    "node-notifier": "^5.1.2"
+  }
+}
