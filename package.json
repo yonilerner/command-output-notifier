@@ -18,5 +18,8 @@
   "homepage": "https://github.com/yonilerner/command-output-notifier#readme",
   "dependencies": {
     "node-notifier": "^5.1.2"
+  },
+  "bin": {
+    "con": "./index.js"
   }
 }
