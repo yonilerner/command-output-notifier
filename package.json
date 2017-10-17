@@ -1,6 +1,6 @@
 {
   "name": "command-output-notifier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Run long-running commands with this utility and have them post notifications when output matches some text.",
   "main": "index.js",
   "scripts": {
