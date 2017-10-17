@@ -1,10 +1,10 @@
 const notifier = require('node-notifier')
+const growlNotifier = new notifier.Growl()
 
 const notify = (title, message) => {
-    notifier.notify({
-        title,
-        message
-    })
+    const msg = {title, message}
+    notifier.notify(msg)
+    growlNotifier.notify(msg)
 }
 
 const matchers = [
