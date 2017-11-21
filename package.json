@@ -1,6 +1,6 @@
 {
   "name": "command-output-notifier",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Run long-running commands with this utility and have them post notifications when output matches some text.",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/yonilerner/command-output-notifier#readme",
   "dependencies": {
+    "command-exists": "^1.2.2",
     "node-notifier": "^5.1.2"
   },
   "bin": {
