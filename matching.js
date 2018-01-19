@@ -2,15 +2,16 @@ const notifier = require('node-notifier')
 const growlNotifier = new notifier.Growl()
 const commandExists = require('command-exists').sync
 const os = require('os')
+const lodash = require('lodash')
 
-const notify = (title, message) => {
+const notify = lodash.debounce((title, message) => {
     const msg = {title, message}
     if (os.platform() === 'linux' && commandExists('gol')) {
         growlNotifier.notify(msg)
     } else {
         notifier.notify(msg)
     }
-}
+}, 100, {trailing: true})
 
 const matchers = [
     {
