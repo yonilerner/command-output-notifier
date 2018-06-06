@@ -20,7 +20,7 @@ const matchers = [
         body: () => new Date().toISOString()
     },
     {
-        matcher: 'Compilation complete. Watching for file changes',
+        matcher: 'Watching for file changes',
         title: 'Typescript',
         body: line => line.split(' - ')[0]
     }
